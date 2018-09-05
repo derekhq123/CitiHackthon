@@ -23,6 +23,66 @@ public class HomeBuyer implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private Long savings;
+    
+    private Long monthlyIncome;
+    
+    private Long monthlyExpense;
+    
+    private Integer age;
+    
+    private Long estimatedLoan;
+
+    public HomeBuyer() {
+    }
+
+    public HomeBuyer(Long savings, Long monthlyIncome, Long monthlyExpense, Integer age) {
+        this.savings = savings;
+        this.monthlyIncome = monthlyIncome;
+        this.monthlyExpense = monthlyExpense;
+        this.age = age;
+    }
+
+    public Long getSavings() {
+        return savings;
+    }
+
+    public void setSavings(Long savings) {
+        this.savings = savings;
+    }
+
+    public Long getMonthlyIncome() {
+        return monthlyIncome;
+    }
+
+    public void setMonthlyIncome(Long monthlyIncome) {
+        this.monthlyIncome = monthlyIncome;
+    }
+
+    public Long getMonthlyExpense() {
+        return monthlyExpense;
+    }
+
+    public void setMonthlyExpense(Long monthlyExpense) {
+        this.monthlyExpense = monthlyExpense;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Long getEstimatedLoan() {
+        return estimatedLoan;
+    }
+
+    public void setEstimatedLoan(Long estimatedLoan) {
+        this.estimatedLoan = estimatedLoan;
+    }
+    
     public Long getId() {
         return id;
     }
