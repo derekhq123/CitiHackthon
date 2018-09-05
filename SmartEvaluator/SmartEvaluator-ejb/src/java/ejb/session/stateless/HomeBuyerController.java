@@ -6,14 +6,21 @@
 package ejb.session.stateless;
 
 import javax.ejb.Stateless;
-
+import entity.HomeBuyer;
+import entity.House;        
+import java.util.ArrayList;
 /**
  *
  * @author hongxu
  */
 @Stateless
 public class HomeBuyerController implements HomeBuyerControllerLocal {
-
+    ArrayList <House> returnHouseList=new ArrayList<>();
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
+    
+    public void AnalysisUser(HomeBuyer buyer){
+        
+    }
+   
 }
