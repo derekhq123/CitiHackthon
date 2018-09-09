@@ -6,7 +6,7 @@
 package ejb.session.stateless;
 
 import javax.ejb.Stateless;
-import entity.Homebuyer;
+import entity.HomeBuyer;
 import entity.House;        
 import java.util.ArrayList;
 import ejb.session.singleton.dataInitialization;
@@ -20,7 +20,7 @@ public class HomeBuyerController implements HomeBuyerControllerLocal {
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
     
-    public ArrayList <House>  getHouseList(Homebuyer buyer){
+    public ArrayList <House>  getHouseList(HomeBuyer buyer){
         //get info from buyer
         //logic function
         //get money

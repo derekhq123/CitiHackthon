@@ -6,7 +6,7 @@
 package ejb.session.singleton;
 
 import ejb.session.stateless.HomeBuyerControllerLocal;
-import entity.Homebuyer;
+import entity.HomeBuyer;
 import entity.House;
 import java.io.File;
 import java.io.FileInputStream;
@@ -69,7 +69,7 @@ public class dataInitialization {
                 Long longitute=new Long("0");
                 Long latitute=new Long("0");
                 System.out.print(houseName);
-                House house=new House(Address,area,houseName,latitute,longitute,Price,unitPrice);
+                House house=new House(Address,houseName,Price,unitPrice,longitute,latitute,area);
                 houseList.add(house);
 //                em.persist(house);
 
