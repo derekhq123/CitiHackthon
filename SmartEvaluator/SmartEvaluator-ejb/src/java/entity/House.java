@@ -26,13 +26,15 @@ public class House implements Serializable {
 
     private String address;
     
-    private Long price;
+    private String houseName;
+    
+    private Long totalPrice;
+    
+    private Long unitPrice;
     
     private Long longitude;
     
     private Long latitude;
-    
-    private Integer tenure;
     
     private Long area;
             
@@ -47,15 +49,40 @@ public class House implements Serializable {
     public House() {
     }
 
-    public House(String address, Long price, Long longitude, Long latitude, Integer tenure, Long area) {
-        this();
+    public House(String address, String houseName, Long totalPrice, Long unitPrice, Long longitude, Long latitude, Long area) {
         this.address = address;
-        this.price = price;
+        this.houseName = houseName;
+        this.totalPrice = totalPrice;
+        this.unitPrice = unitPrice;
         this.longitude = longitude;
         this.latitude = latitude;
-        this.tenure = tenure;
         this.area = area;
     }
+
+    public String getHouseName() {
+        return houseName;
+    }
+
+    public void setHouseName(String houseName) {
+        this.houseName = houseName;
+    }
+
+    public Long getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(Long totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public Long getUnitPrice() {
+        return unitPrice;
+    }
+
+    public void setUnitPrice(Long unitPrice) {
+        this.unitPrice = unitPrice;
+    }
+
 
     public String getAddress() {
         return address;
@@ -65,13 +92,6 @@ public class House implements Serializable {
         this.address = address;
     }
 
-    public Long getPrice() {
-        return price;
-    }
-
-    public void setPrice(Long price) {
-        this.price = price;
-    }
 
     public Long getLongitude() {
         return longitude;
@@ -89,13 +109,6 @@ public class House implements Serializable {
         this.latitude = latitude;
     }
 
-    public Integer getTenure() {
-        return tenure;
-    }
-
-    public void setTenure(Integer tenure) {
-        this.tenure = tenure;
-    }
 
     public Long getArea() {
         return area;
