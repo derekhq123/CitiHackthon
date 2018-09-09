@@ -22,6 +22,8 @@ public class HomeBuyer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
+    private String name;
 
     private Long savings;
     
@@ -41,6 +43,14 @@ public class HomeBuyer implements Serializable {
         this.monthlyIncome = monthlyIncome;
         this.monthlyExpense = monthlyExpense;
         this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getSavings() {
