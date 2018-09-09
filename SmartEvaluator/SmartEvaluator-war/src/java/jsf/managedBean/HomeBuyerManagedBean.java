@@ -60,7 +60,7 @@ public class HomeBuyerManagedBean {
         FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("income", homeBuyer.getMonthlyIncome());
         FacesContext.getCurrentInstance().getExternalContext().getSessionMap().put("expense", homeBuyer.getMonthlyExpense());
         
-        //houseList = homeBuyerControllerLocal.getHouseList(homeBuyer);
+        houseList = homeBuyerControllerLocal.getHouseList(homeBuyer);
         FacesContext.getCurrentInstance().getExternalContext().redirect("houseSuggest.xhtml");
     }
 }
